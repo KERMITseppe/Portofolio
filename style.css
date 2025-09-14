@@ -1,142 +1,134 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.4rem;
-    color: #fff;
-    background-color: rgb(13, 14, 38);
-    max-width: 50rem;
-    margin: 0 auto;
-    text-align: center;
-    line-height: 1.5;
-
-    header {
-        margin-top: 3rem;
-
-        h1 {
-            font-weight: bold;
-            font-size: 2.5rem;
-            margin: 3rem 0 2rem 0;
-        }
-
-        small {
-            display: block;
-            /* ensures it sits on its own line */
-            margin-top: -1.8rem;
-            /* pull it closer */
-            font-size: 1.2rem;
-            color: #aaa;
-            /* optional: make it a little softer */
-        }
-
-        img {
-            width: 15rem;
-            height: auto;
-            border-radius: 2rem;
-        }
-
-        .socials {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-
-            i {
-                font-size: 2.5rem;
-                transition: transform 0.1s ease-in-out;
-
-                &:hover {
-                    transform: scale(1.2);
-                }
-            }
-        }
-    }
-
-    main {
-        margin: 2rem 0;
-
-        #projects {
-            width: 60%;
-            margin: 0 auto;
-
-            h2 {
-                text-align: center;
-                font-size: 2rem;
-                margin: 2rem 0;
-                font-weight: bold;
-            }
-
-            ul {
-                display: flex;
-                justify-content: center;
-                /* centers all li items */
-                gap: 3rem;
-                list-style: none;
-                /* removes bullets */
-                padding: 0;
-                /* removes default padding */
-                margin: 0;
-                /* prevents shifting */
-            }
-
-            li {
-                margin: 2rem 0;
-                font-size: 1.2rem;
-            }
-
-            a {
-                text-decoration: none;
-                color: rgb(83, 83, 255);
-                font-weight: bold;
-                font-size: 1.5rem;
-
-                &:hover {
-                    color: rgb(67, 67, 211);
-                }
-            }
-        }
-    }
-
-    footer {
-        margin-top: 2rem;
-        color: #565656;
-    }
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4rem;
+  color: #fff;
+  background-color: rgb(13, 14, 38);
+  max-width: 50rem;
+  margin: 0 auto;
+  text-align: center;
+  line-height: 1.5;
 }
 
-.fa-discord {
-    color: #7289DA;
-
-    &:hover {
-        color: #5d6fb0;
-    }
+/* HEADER */
+header {
+  margin-top: 3rem;
+}
+header h1 {
+  font-weight: bold;
+  font-size: 2.5rem;
+  margin: 3rem 0 2rem 0;
+}
+header small {
+  display: block;
+  margin-top: -1.8rem;
+  font-size: 1.2rem;
+  color: #aaa;
+}
+header img {
+  width: 15rem;
+  height: auto;
+  border-radius: 2rem;
+}
+header .socials {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+header .socials i {
+  font-size: 2.5rem;
+  transition: transform 0.1s ease-in-out;
+}
+header .socials i:hover {
+  transform: scale(1.2);
 }
 
-.fa-x-twitter {
-    color: #1DA1F2;
-
-    &:hover {
-        color: #1a8cd8;
-    }
+/* MAIN */
+main {
+  margin: 2rem 0;
+  padding: 0 1rem; /* extra breathing space on small screens */
+}
+#projects {
+  width: 60%;
+  margin: 0 auto;
+}
+#projects h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin: 2rem 0;
+  font-weight: bold;
+}
+#projects ul {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+#projects li {
+  margin: 2rem 0;
+  font-size: 1.2rem;
+}
+#projects a {
+  text-decoration: none;
+  color: rgb(83, 83, 255);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+#projects a:hover {
+  color: rgb(67, 67, 211);
 }
 
-.fa-github {
-    color: #fff;
-
-    &:hover {
-        color: #e1e1e1;
-    }
+/* FOOTER */
+footer {
+  margin-top: 2rem;
+  color: #565656;
 }
 
-.fa-gitlab {
-    color: #e24329;
+/* ICON COLORS */
+.fa-discord { color: #7289DA; }
+.fa-discord:hover { color: #5d6fb0; }
+.fa-x-twitter { color: #1DA1F2; }
+.fa-x-twitter:hover { color: #1a8cd8; }
+.fa-github { color: #fff; }
+.fa-github:hover { color: #e1e1e1; }
+.fa-gitlab { color: #e24329; }
+.fa-gitlab:hover { color: #d83b2a; }
 
-    &:hover {
-        color: #d83b2a;
-    }
-}
-
+/* PROJECT IMAGES */
 .project-img {
-    height: 50rem;
-    /* keep all consistent */
-    object-fit: cover;
-    /* crops to fit, keeps it looking good */
-    border-radius: 8px;
-    /* optional: rounded corners */
+  width: 100%;
+  height: auto;
+  max-width: 500px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* RESPONSIVE GRID */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item {
+  flex: 1 1 100%;
+}
+
+/* Default (desktop) */
+#projects ul {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+/* Mobile (<= 768px) */
+@media (max-width: 768px) {
+  #projects ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
 }
