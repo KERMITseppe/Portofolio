@@ -16,12 +16,15 @@ body {
             font-size: 2.5rem;
             margin: 3rem 0 2rem 0;
         }
-        
-            small {
-            display: block; /* ensures it sits on its own line */
-            margin-top: -1.8rem; /* pull it closer */
+
+        small {
+            display: block;
+            /* ensures it sits on its own line */
+            margin-top: -1.8rem;
+            /* pull it closer */
             font-size: 1.2rem;
-            color: #aaa; /* optional: make it a little softer */
+            color: #aaa;
+            /* optional: make it a little softer */
         }
 
         img {
@@ -58,6 +61,19 @@ body {
                 font-size: 2rem;
                 margin: 2rem 0;
                 font-weight: bold;
+            }
+
+            ul {
+                display: flex;
+                justify-content: center;
+                /* centers all li items */
+                gap: 3rem;
+                list-style: none;
+                /* removes bullets */
+                padding: 0;
+                /* removes default padding */
+                margin: 0;
+                /* prevents shifting */
             }
 
             li {
@@ -114,4 +130,13 @@ body {
     &:hover {
         color: #d83b2a;
     }
+}
+
+.project-img {
+    height: 50rem;
+    /* keep all consistent */
+    object-fit: cover;
+    /* crops to fit, keeps it looking good */
+    border-radius: 8px;
+    /* optional: rounded corners */
 }
