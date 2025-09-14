@@ -36,7 +36,7 @@ export default function Page() {
           <h2 className="text-2xl font-bold">Projects</h2>
           <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-4 list-none p-0">
             <li className="flex flex-col items-center gap-4">
-              <Image src="/The_Velvet_Queen_03.jpg" alt="The Velvet Queen" width={300} height={450} className="mx-auto" />
+              <Image src="/The_Velvet_Queen_03.jpg" alt="The Velvet Queen" width={500} height={650} className="mx-auto" />
               <p className="color-[rgb(83,83,255)] text-xl font-bold">The Velvet Queen</p>
               <p>
                 A recreation of a poster of the movie &apos;The Velvet Queen&apos; from Vincent Munier and Marie Amiguet. The picture used is from a scene in the movie.
@@ -44,7 +44,7 @@ export default function Page() {
               <p>Made with Adobe Photoshop and Adobe Illustrator – 2024</p>
             </li>
             <li className="flex flex-col items-center gap-4">
-              <Image src="/POSTER SAVIO_page-0001.jpg" alt="Live Yourz" width={300} height={450} className="mx-auto" />
+              <Image src="/POSTER SAVIO_page-0001.jpg" alt="Live Yourz" width={500} height={650} className="mx-auto" />
               <p className="color-[rgb(83,83,255)] text-xl font-bold">Live Yourz</p>
               <p>
                 A poster made for the short movie of Savio Golfa. The poster represents the somber times of the character, with a picture that can be found throughout the movie.
@@ -52,7 +52,7 @@ export default function Page() {
               <p>Made with Adobe Photoshop and Adobe Illustrator – 2025</p>
             </li>
             <li className="flex flex-col items-center gap-4">
-              <Image src="/Poster twisted A3_page-0001.jpg" alt="Twisted" width={300} height={450} className="mx-auto" />
+              <Image src="/Poster twisted A3_page-0001.jpg" alt="Twisted" width={500} height={650} className="mx-auto" />
               <p className="color-[rgb(83,83,255)] text-xl font-bold">Twisted</p>
               <p>
                 A poster that was made around the word &apos;Twisted&apos;. The photo represents a repeating of words in a circle that twist down to the middle.
