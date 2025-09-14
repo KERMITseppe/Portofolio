@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Page() {
   return (
-    <div className="font-[Roboto] text-white bg-[rgb(13,14,38)] min-h-screen p-4">
+    <div className="font-[Roboto] text-white bg-[#171717] min-h-screen p-4">
       <header className="font-bold text-2xl text-center my-3">
         <Image src="/runningprod_logo.png" alt="Website Logo" width={200} height={200} className="rounded-4xl mx-auto mb-8" />
         <h1>Running Productions</h1>
