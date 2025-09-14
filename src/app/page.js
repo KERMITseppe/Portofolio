@@ -27,7 +27,10 @@ export default function Page() {
       </header>
 
       <main className="p-4">
-        <p className="text-center text-lg">Hello there, I am Seppe, student at Thomas More Mechelen, Belgium. <br />I am studying Media and Entertainment Business.</p>
+        <p className="text-center text-lg">
+          Hello there, I am Seppe, student at Thomas More Mechelen, Belgium. <br />
+          I&apos;m studying Media and Entertainment Business.
+        </p>
 
         <div className="w-full mt-8 text-center">
           <h2 className="text-2xl font-bold">Projects</h2>
@@ -35,19 +38,25 @@ export default function Page() {
             <li className="flex flex-col items-center gap-4">
               <Image src="/The_Velvet_Queen_03.jpg" alt="The Velvet Queen" width={300} height={450} className="mx-auto" />
               <p className="color-[rgb(83,83,255)] text-xl font-bold">The Velvet Queen</p>
-              <p>A recreation of a poster of the movie 'The Velvet Queen' from Vincent Munier and Marie Amiguet. The picture used is from a scene in the movie.</p>
+              <p>
+                A recreation of a poster of the movie &apos;The Velvet Queen&apos; from Vincent Munier and Marie Amiguet. The picture used is from a scene in the movie.
+              </p>
               <p>Made with Adobe Photoshop and Adobe Illustrator – 2024</p>
             </li>
             <li className="flex flex-col items-center gap-4">
               <Image src="/POSTER SAVIO_page-0001.jpg" alt="Live Yourz" width={300} height={450} className="mx-auto" />
               <p className="color-[rgb(83,83,255)] text-xl font-bold">Live Yourz</p>
-              <p>A poster made for the short movie of Savio Golfa. The poster represents the somber times of the character, with a picture that can be found throughout the movie.</p>
+              <p>
+                A poster made for the short movie of Savio Golfa. The poster represents the somber times of the character, with a picture that can be found throughout the movie.
+              </p>
               <p>Made with Adobe Photoshop and Adobe Illustrator – 2025</p>
             </li>
             <li className="flex flex-col items-center gap-4">
               <Image src="/Poster twisted A3_page-0001.jpg" alt="Twisted" width={300} height={450} className="mx-auto" />
               <p className="color-[rgb(83,83,255)] text-xl font-bold">Twisted</p>
-              <p>A poster that was made around the word 'Twisted'. The photo represents a repeating of words in a circle that twist down to the middle.</p>
+              <p>
+                A poster that was made around the word &apos;Twisted&apos;. The photo represents a repeating of words in a circle that twist down to the middle.
+              </p>
               <p>Made with Adobe Photoshop – 2024</p>
             </li>
           </ul>
