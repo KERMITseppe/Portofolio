@@ -51,13 +51,13 @@ export default function Page() {
               />
               <p className="text-[rgb(83,83,255)] text-xl font-bold">The Velvet Queen</p>
               <p>
-                A recreation of a poster of the movie &apos;The Velvet Queen&apos; from Vincent Munier and Marie Amiguet. The picture used is from a scene in the movie.
+                This fictional poster is a tribute to The Velvet Queen, inspired by the original movie poster. The background features an image from the documentary, which reinforces the film's visual identity. The text remains faithful to the original, using the elegant Mencken Std. typeface that perfectly matches the film's aesthetic.
               </p>
               <p>Made with Adobe Photoshop and Adobe Illustrator – 2024</p>
             </li>
             <li className="flex flex-col items-center gap-4">
               <Image 
-                src="/POSTER_SAVIO_page-0001.jpg" 
+                src="/POSTER SAVIO_page-0001.jpg" 
                 alt="Live Yourz" 
                 width={500} 
                 height={650} 
@@ -65,13 +65,13 @@ export default function Page() {
               />
               <p className="text-[rgb(83,83,255)] text-xl font-bold">Live Yourz</p>
               <p>
-                A poster made for the short movie of Savio Golfa. The poster represents the somber times of the character, with a picture that can be found throughout the movie.
+                A poster designed for the short film by Savio Golfa, inspired by the melancholic atmosphere of the film. The design visualizes the somber period of the main character through a recurring visual motif that runs as a common thread throughout the film. The visual identity reinforces the emotional narrative and emphasizes the dark themes explored in the film.
               </p>
               <p>Made with Adobe Photoshop and Adobe Illustrator – 2025</p>
             </li>
             <li className="flex flex-col items-center gap-4">
               <Image 
-                src="/Poster_twisted_A3_page-0001.jpg" 
+                src="/Poster twisted A3_page-0001.jpg" 
                 alt="Twisted" 
                 width={500} 
                 height={650} 
@@ -79,21 +79,21 @@ export default function Page() {
               />
               <p className="text-[rgb(83,83,255)] text-xl font-bold">Twisted</p>
               <p>
-                A poster that was made around the word &apos;Twisted&apos;. The photo represents a repeating of words in a circle that twist down to the middle.
+                Blank Poster is a hypnotic typographic artwork that plays with repetition and optical illusions. The word "TWISTED" forms a spiral that appears to spin infinitely, with a strong contrast between black and white. This minimalist design draws the viewer toward a central point that feels like a visual black hole. The work explores themes such as distortion, structure, and the power of words in a graphic context.
               </p>
               <p>Made with Adobe Photoshop – 2024</p>
             </li>
             <li className="flex flex-col items-center gap-4">
               <Image 
-                src="/template_cover.jpg" 
-                alt="Album Cover" 
+                src="/Poster Vormen.jpg" 
+                alt="Poster Vormen" 
                 width={500} 
                 height={650} 
                 className="mx-auto" 
               />
-              <p className="text-[rgb(83,83,255)] text-xl font-bold">Album Cover</p>
+              <p className="text-[rgb(83,83,255)] text-xl font-bold">Tangram Code</p>
               <p>
-                Album Cover is een minimalistisch grafisch ontwerp dat tekst en abstracte geometrische vormen combineert. Met een focus op balans en ritme creëert het een elegante, tijdloze esthetiek die perfect past bij een albumcover.
+               Tangram Code is a geometric artwork that arranges numbers like a modern tangram puzzle. The clean grid suggests hidden patterns through stark black-and-white contrast. This minimalist piece plays with logic, sequence, and the visual rhythm of data, inviting the viewer to find meaning in simplicity.
               </p>
               <p>Made with Adobe Photoshop – 2024</p>
             </li>
@@ -107,7 +107,21 @@ export default function Page() {
               />
               <p className="text-[rgb(83,83,255)] text-xl font-bold">Bauhause</p>
               <p>
-                Deze fictieve poster is ontworpen in de minimalistische Bauhause-stijl, met strakke compositie en veel witruimte. Centraal staat een gestileerd kannetje, samen met de titel Bauhaus. Onderaan bevat het ontwerp de tentoonstellinginformatie en datum.
+                This fictional poster is designed in the minimalist Bauhaus style, with a clean composition and ample white space. Centered is a stylized little jug, along with the title Bauhaus. The bottom of the design contains the exhibition information and date.
+              </p>
+              <p>Made with Adobe Photoshop and Adobe Illustrator – 2024</p>
+            </li>
+            <li className="flex flex-col items-center gap-4">
+              <Image 
+                src="/JEF FESTIVAL.jpg" 
+                alt="JEF FESTIVAL" 
+                width={500} 
+                height={650} 
+                className="mx-auto" 
+              />
+              <p className="text-[rgb(83,83,255)] text-xl font-bold">JEF Poster</p>
+              <p>
+                A personal initiative designed for the JEF Youth Film Festival, inspired by their previous posters and house style. The design combines five unique shapes, using the three official JEF brand colors to maintain the visual identity.
               </p>
               <p>Made with Adobe Photoshop and Adobe Illustrator – 2024</p>
             </li>
