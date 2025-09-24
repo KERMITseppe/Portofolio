@@ -51,7 +51,7 @@ export default function Page() {
               />
               <p className="text-[rgb(83,83,255)] text-xl font-bold">The Velvet Queen</p>
               <p>
-                This fictional poster is a tribute to The Velvet Queen, inspired by the original movie poster. The background features an image from the documentary, which reinforces the film's visual identity. The text remains faithful to the original, using the elegant Mencken Std. typeface that perfectly matches the film's aesthetic.
+                This fictional poster is a tribute to The Velvet Queen, inspired by the original movie poster. The background features an image from the documentary, which reinforces the film&apos;s visual identity. The text remains faithful to the original, using the elegant Mencken Std. typeface that perfectly matches the film&apos;s aesthetic.
               </p>
               <p>Made with Adobe Photoshop and Adobe Illustrator – 2024</p>
             </li>
@@ -79,7 +79,7 @@ export default function Page() {
               />
               <p className="text-[rgb(83,83,255)] text-xl font-bold">Twisted</p>
               <p>
-                Blank Poster is a hypnotic typographic artwork that plays with repetition and optical illusions. The word "TWISTED" forms a spiral that appears to spin infinitely, with a strong contrast between black and white. This minimalist design draws the viewer toward a central point that feels like a visual black hole. The work explores themes such as distortion, structure, and the power of words in a graphic context.
+                Blank Poster is a hypnotic typographic artwork that plays with repetition and optical illusions. The word &quot;TWISTED&quot; forms a spiral that appears to spin infinitely, with a strong contrast between black and white. This minimalist design draws the viewer toward a central point that feels like a visual black hole. The work explores themes such as distortion, structure, and the power of words in a graphic context.
               </p>
               <p>Made with Adobe Photoshop – 2024</p>
             </li>
