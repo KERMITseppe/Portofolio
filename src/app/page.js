@@ -130,7 +130,7 @@ export default function Page() {
       </main>
 
       <footer className="mt-8 text-center text-gray-400">
-        <small>Contact rennen.seppe@gmail.com | 2025 | Last update: 24/09/2025</small>
+        <small>Contact rennen.seppe@gmail.com | 2025 | Last update: 03/01/2026</small>
       </footer>
     </div>
   )
