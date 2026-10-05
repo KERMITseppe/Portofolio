@@ -2,31 +2,31 @@ import Image from "next/image";
 
 export default function Page() {
   return (
-    <div className="font-[Roboto] text-white bg-[#171717] min-h-screen p-4">
-      <header className="font-bold text-2xl text-center my-3">
+    <div className="font-['Roboto',sans-serif] text-white bg-[#171717] min-h-screen p-4">
+      <header className="text-center my-3">
         <Image 
           src="/runningprod_logo.png" 
           alt="Website Logo" 
           width={200} 
           height={200} 
-          className="rounded-4xl mx-auto mb-8" 
+          className="rounded-3xl mx-auto mb-8 h-auto w-auto" 
         />
-        <h1>Running Productions</h1>
-        <small className="text-gray-400">Seppe Rennen</small>
-        <ul className="p-0 flex justify-center space-x-4 mt-4 text-xl">
+        <h1 className="font-bold text-2xl">Running Productions</h1>
+        <small className="text-gray-400 text-sm block mt-1">Seppe Rennen</small>
+        <ul className="p-0 list-none flex justify-center space-x-4 mt-4 text-xl">
           <li>
             <a href="mailto:rennen.seppe@gmail.com" aria-label="Email">
-              <i className="fa-solid fa-envelope text-3xl hover:transform hover:scale-110 transition-transform duration-200"></i>
+              <i className="fa-solid fa-envelope text-3xl inline-block transition-transform duration-200 hover:scale-110"></i>
             </a>
           </li>
           <li>
             <a href="https://www.youtube.com/@rennenseppe" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
-              <i className="fa-brands fa-youtube text-3xl hover:transform hover:scale-110 transition-transform duration-200"></i>
+              <i className="fa-brands fa-youtube text-3xl inline-block transition-transform duration-200 hover:scale-110"></i>
             </a>
           </li>
           <li>
             <a href="https://www.instagram.com/notseppes" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-              <i className="fa-brands fa-instagram text-3xl hover:transform hover:scale-110 transition-transform duration-200"></i>
+              <i className="fa-brands fa-instagram text-3xl inline-block transition-transform duration-200 hover:scale-110"></i>
             </a>
           </li>
         </ul>
@@ -47,7 +47,7 @@ export default function Page() {
                 alt="The Velvet Queen" 
                 width={500} 
                 height={650} 
-                className="mx-auto"
+                className="mx-auto max-w-full h-auto"
               />
               <p className="text-[rgb(83,83,255)] text-xl font-bold">The Velvet Queen</p>
               <p>
@@ -61,7 +61,7 @@ export default function Page() {
                 alt="Live Yourz" 
                 width={500} 
                 height={650} 
-                className="mx-auto" 
+                className="mx-auto max-w-full h-auto" 
               />
               <p className="text-[rgb(83,83,255)] text-xl font-bold">Live Yourz</p>
               <p>
@@ -75,7 +75,7 @@ export default function Page() {
                 alt="Twisted" 
                 width={500} 
                 height={650} 
-                className="mx-auto" 
+                className="mx-auto max-w-full h-auto" 
               />
               <p className="text-[rgb(83,83,255)] text-xl font-bold">Twisted</p>
               <p>
@@ -89,7 +89,7 @@ export default function Page() {
                 alt="Poster Vormen" 
                 width={500} 
                 height={650} 
-                className="mx-auto" 
+                className="mx-auto max-w-full h-auto" 
               />
               <p className="text-[rgb(83,83,255)] text-xl font-bold">Tangram Code</p>
               <p>
@@ -103,7 +103,7 @@ export default function Page() {
                 alt="Bauhaus" 
                 width={500} 
                 height={650} 
-                className="mx-auto" 
+                className="mx-auto max-w-full h-auto" 
               />
               <p className="text-[rgb(83,83,255)] text-xl font-bold">Bauhause</p>
               <p>
@@ -117,7 +117,7 @@ export default function Page() {
                 alt="JEF FESTIVAL" 
                 width={500} 
                 height={650} 
-                className="mx-auto" 
+                className="mx-auto max-w-full h-auto" 
               />
               <p className="text-[rgb(83,83,255)] text-xl font-bold">JEF Poster</p>
               <p>
@@ -131,7 +131,7 @@ export default function Page() {
                 alt="A$AP Rocky" 
                 width={500} 
                 height={650} 
-                className="mx-auto" 
+                className="mx-auto max-w-full h-auto" 
               />
               <p className="text-[rgb(83,83,255)] text-xl font-bold">A$AP Rocky Poster</p>
               <p>
@@ -145,7 +145,7 @@ export default function Page() {
                 alt="Tyler, The Creator" 
                 width={500} 
                 height={650} 
-                className="mx-auto" 
+                className="mx-auto max-w-full h-auto" 
               />
               <p className="text-[rgb(83,83,255)] text-xl font-bold">Tyler, The Creator Poster</p>
               <p>
@@ -159,7 +159,7 @@ export default function Page() {
                 alt="Jeff Buckley" 
                 width={500} 
                 height={650} 
-                className="mx-auto" 
+                className="mx-auto max-w-full h-auto" 
               />
               <p className="text-[rgb(83,83,255)] text-xl font-bold">Jeff Buckley Poster</p>
               <p>
@@ -175,5 +175,5 @@ export default function Page() {
         <small>Contact rennen.seppe@gmail.com | 2025 | Last update: 05/10/2026 | 2.0</small>
       </footer>
     </div>
-  )
+  );
 }
