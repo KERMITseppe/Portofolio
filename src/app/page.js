@@ -35,7 +35,7 @@ export default function Page() {
       <main className="p-4">
         <p className="text-center text-lg">
           Hello there, I am Seppe, student at Thomas More Mechelen, Belgium. <br />
-          I'm studying Media and Entertainment Business.
+          I&apos;m studying Media and Entertainment Business.
         </p>
 
         <div className="w-full mt-8 text-center">
