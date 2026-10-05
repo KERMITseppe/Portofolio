@@ -133,7 +133,7 @@ export default function Page() {
                 height={650} 
                 className="mx-auto" 
               />
-              <p className="text-[rgb(83,83,255)] text-xl font-bold">JEF Poster</p>
+              <p className="text-[rgb(83,83,255)] text-xl font-bold">A$AP Rocky Poster</p>
               <p>
                 This tribute poster captures the raw fashion, attitude, and visual identity of A$AP Rocky. The design combines striking high-contrast black-and-white photography with bold, oversized yellow typography layered across the composition. By integrating his iconic quote on fashion and emotion, the artwork highlights the intersection between music, personal style, and graphic design.
               </p>
@@ -147,7 +147,7 @@ export default function Page() {
                 height={650} 
                 className="mx-auto" 
               />
-              <p className="text-[rgb(83,83,255)] text-xl font-bold">JEF Poster</p>
+              <p className="text-[rgb(83,83,255)] text-xl font-bold">Tyler, The Creator Poster</p>
               <p>
                 This tribute poster reflects the eccentric and creative world of Tyler, The Creator. The layout pairs a high-contrast black-and-white portrait with playfulness and distinctive vintage typography against a soft blue background. Featuring his impactful quote on individuality and world-building, the design captures his unique crossover between hip-hop, fashion, and alternative art.
               </p>
@@ -161,7 +161,7 @@ export default function Page() {
                 height={650} 
                 className="mx-auto" 
               />
-              <p className="text-[rgb(83,83,255)] text-xl font-bold">JEF Poster</p>
+              <p className="text-[rgb(83,83,255)] text-xl font-bold">Jeff Buckley Poster</p>
               <p>
                 This tribute poster honors the emotional depth and raw artistic nature of Jeff Buckley. The design combines a black-and-white portrait with deep burgundy typography against a soft lavender backdrop. By incorporating his poetic quote on sensitivity and awareness, the artwork captures the vulnerable yet powerful essence of his music and legacy.
               </p>
