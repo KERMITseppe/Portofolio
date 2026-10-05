@@ -155,7 +155,7 @@ export default function Page() {
             </li>
             <li className="flex flex-col items-center gap-4">
               <Image 
-                src="/Jeff_Verticaal.png" 
+                src="/Jeff_Vertricaal.png" 
                 alt="Jeff Buckley" 
                 width={500} 
                 height={650} 
