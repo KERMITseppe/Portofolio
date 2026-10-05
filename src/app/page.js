@@ -125,12 +125,54 @@ export default function Page() {
               </p>
               <p>Made with Adobe Photoshop and Adobe Illustrator – 2024</p>
             </li>
+            <li className="flex flex-col items-center gap-4">
+              <Image 
+                src="/ASAP.png" 
+                alt="A$AP Rocky" 
+                width={500} 
+                height={650} 
+                className="mx-auto" 
+              />
+              <p className="text-[rgb(83,83,255)] text-xl font-bold">JEF Poster</p>
+              <p>
+                This tribute poster captures the raw fashion, attitude, and visual identity of A$AP Rocky. The design combines striking high-contrast black-and-white photography with bold, oversized yellow typography layered across the composition. By integrating his iconic quote on fashion and emotion, the artwork highlights the intersection between music, personal style, and graphic design.
+              </p>
+              <p>Made with Adobe Photoshop and Adobe Illustrator – 2026</p>
+            </li>
+            <li className="flex flex-col items-center gap-4">
+              <Image 
+                src="/Tyler_verticaal.png" 
+                alt="Tyler, The Creator" 
+                width={500} 
+                height={650} 
+                className="mx-auto" 
+              />
+              <p className="text-[rgb(83,83,255)] text-xl font-bold">JEF Poster</p>
+              <p>
+                This tribute poster reflects the eccentric and creative world of Tyler, The Creator. The layout pairs a high-contrast black-and-white portrait with playfulness and distinctive vintage typography against a soft blue background. Featuring his impactful quote on individuality and world-building, the design captures his unique crossover between hip-hop, fashion, and alternative art.
+              </p>
+              <p>Made with Adobe Photoshop and Adobe Illustrator – 2026</p>
+            </li>
+            <li className="flex flex-col items-center gap-4">
+              <Image 
+                src="/Jeff_Verticaal.png" 
+                alt="Jeff Buckley" 
+                width={500} 
+                height={650} 
+                className="mx-auto" 
+              />
+              <p className="text-[rgb(83,83,255)] text-xl font-bold">JEF Poster</p>
+              <p>
+                This tribute poster honors the emotional depth and raw artistic nature of Jeff Buckley. The design combines a black-and-white portrait with deep burgundy typography against a soft lavender backdrop. By incorporating his poetic quote on sensitivity and awareness, the artwork captures the vulnerable yet powerful essence of his music and legacy.
+              </p>
+              <p>Made with Adobe Photoshop and Adobe Illustrator – 2026</p>
+            </li>
           </ul>
         </div>
       </main>
 
       <footer className="mt-8 text-center text-gray-400">
-        <small>Contact rennen.seppe@gmail.com | 2025 | Last update: 03/01/2026</small>
+        <small>Contact rennen.seppe@gmail.com | 2025 | Last update: 05/10/2026</small>
       </footer>
     </div>
   )
