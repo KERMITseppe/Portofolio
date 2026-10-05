@@ -172,7 +172,7 @@ export default function Page() {
       </main>
 
       <footer className="mt-8 text-center text-gray-400">
-        <small>Contact rennen.seppe@gmail.com | 2025 | Last update: 05/10/2026</small>
+        <small>Contact rennen.seppe@gmail.com | 2025 | Last update: 05/10/2026 | 2.0</small>
       </footer>
     </div>
   )
