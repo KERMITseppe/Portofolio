@@ -2,10 +2,12 @@
 
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { useLanguage } from "./LanguageContext";
 
 // Raster met posters. Klik op een poster om hem groot te bekijken met uitleg.
 export default function ProjectGrid({ projects, ratio }) {
   const [open, setOpen] = useState(null);
+  const { lang, t } = useLanguage();
 
   useEffect(() => {
     if (open === null) return;
@@ -33,7 +35,7 @@ export default function ProjectGrid({ projects, ratio }) {
               type="button"
               onClick={() => setOpen(i)}
               className="group block w-full text-left cursor-pointer"
-              aria-label={`Open ${project.title}`}
+              aria-label={`${t.work.open}: ${project.title}`}
             >
               <div className={`relative ${ratio} overflow-hidden rounded-xl bg-[#1d1d1d]`}>
                 <Image
@@ -47,7 +49,7 @@ export default function ProjectGrid({ projects, ratio }) {
                 />
                 <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   <span className="m-4 inline-flex items-center gap-2 rounded-full bg-[var(--accent)] px-4 py-1.5 text-sm font-semibold text-black">
-                    View project <i className="fa-solid fa-arrow-right text-xs" />
+                    {t.work.view} <i className="fa-solid fa-arrow-right text-xs" />
                   </span>
                 </div>
               </div>
@@ -56,7 +58,7 @@ export default function ProjectGrid({ projects, ratio }) {
                 <span className="text-sm text-white/50 tabular-nums">{project.year}</span>
               </div>
               <p className="text-sm text-white/50">{project.tools}</p>
-              <p className="mt-1 text-[11px] uppercase tracking-[0.15em] text-white/35">Not for commercial use</p>
+              <p className="mt-1 text-[11px] uppercase tracking-[0.15em] text-white/35">{t.work.notCommercial}</p>
             </button>
           </li>
         ))}
@@ -95,16 +97,16 @@ export default function ProjectGrid({ projects, ratio }) {
                 {p.year} · {p.tools}
               </span>
               <h3 className="text-3xl font-extrabold leading-tight text-white">{p.title}</h3>
-              <p className="leading-relaxed text-white/75">{p.description}</p>
+              <p className="leading-relaxed text-white/75">{p.description[lang]}</p>
               <p className="inline-flex w-fit items-center gap-2 rounded-full border border-white/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.15em] text-white/60">
-                <i className="fa-solid fa-ban text-[var(--accent)]" /> Not for commercial use
+                <i className="fa-solid fa-ban text-[var(--accent)]" /> {t.work.notCommercial}
               </p>
               <div className="mt-auto flex gap-2 pt-4">
                 <button
                   type="button"
                   onClick={() => setOpen((open - 1 + projects.length) % projects.length)}
                   className="rounded-full border border-white/20 px-4 py-2 text-sm text-white hover:border-[var(--accent)] hover:text-[var(--accent)]"
-                  aria-label="Previous project"
+                  aria-label={t.work.previous}
                 >
                   <i className="fa-solid fa-arrow-left" />
                 </button>
@@ -112,7 +114,7 @@ export default function ProjectGrid({ projects, ratio }) {
                   type="button"
                   onClick={() => setOpen((open + 1) % projects.length)}
                   className="rounded-full border border-white/20 px-4 py-2 text-sm text-white hover:border-[var(--accent)] hover:text-[var(--accent)]"
-                  aria-label="Next project"
+                  aria-label={t.work.next}
                 >
                   <i className="fa-solid fa-arrow-right" />
                 </button>
@@ -122,7 +124,7 @@ export default function ProjectGrid({ projects, ratio }) {
               type="button"
               onClick={() => setOpen(null)}
               className="absolute right-3 top-3 flex h-10 w-10 items-center justify-center rounded-full bg-black/60 text-white hover:bg-[var(--accent)] hover:text-black"
-              aria-label="Close"
+              aria-label={t.work.close}
             >
               <i className="fa-solid fa-xmark" />
             </button>
