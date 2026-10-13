@@ -6,6 +6,7 @@ const contact = [
   { icon: "fa-solid fa-envelope", label: "rennen.seppe@gmail.com", href: "mailto:rennen.seppe@gmail.com" },
   { icon: "fa-brands fa-instagram", label: "@notseppes", href: "https://www.instagram.com/notseppes" },
   { icon: "fa-brands fa-youtube", label: "@rennenseppe", href: "https://www.youtube.com/@rennenseppe" },
+  { icon: "fa-brands fa-linkedin", label: "Seppe Rennen", href: "https://www.linkedin.com/in/seppe-rennen-9243b8389/" },
 ];
 
 function Card({ children, className = "", id }) {
@@ -158,8 +159,24 @@ export default function Page() {
         </Card>
       </main>
 
-      <footer className="border-t border-white/10 py-6 text-center text-xs text-white/40">
-        © 2026 Seppe Rennen · Running Productions · v3.0
+      <footer className="border-t border-white/10 py-8 text-center text-xs text-white/40">
+        <ul className="mb-4 flex justify-center gap-5 text-lg text-white/60">
+          {contact.map((c) => (
+            <li key={c.href}>
+              <a
+                href={c.href}
+                target={c.href.startsWith("http") ? "_blank" : undefined}
+                rel="noopener noreferrer"
+                aria-label={c.label}
+                className="hover:text-[var(--accent)]"
+              >
+                <i className={c.icon} />
+              </a>
+            </li>
+          ))}
+        </ul>
+        <p>© 2026 Seppe Rennen · Running Productions · v3.0</p>
+        <p className="mt-1">All work is personal or student work and not for commercial use. Portraits in tribute posters belong to their respective photographers.</p>
       </footer>
     </div>
   );

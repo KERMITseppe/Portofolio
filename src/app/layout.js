@@ -1,5 +1,6 @@
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import ScrollToTop from "./ScrollToTop";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -10,11 +11,16 @@ const poppins = Poppins({
 export const metadata = {
   title: "Seppe Rennen · Portfolio 2026",
   description: "Graphic design portfolio of Seppe Rennen (Running Productions): posters, typography and visual identities.",
+  openGraph: {
+    title: "Seppe Rennen · Portfolio 2026",
+    description: "Posters, typography and motion by Seppe Rennen (Running Productions).",
+    type: "website",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <head>
         <link
           rel="stylesheet"
@@ -24,7 +30,10 @@ export default function RootLayout({ children }) {
           referrerPolicy="no-referrer"
         />
       </head>
-      <body className={`${poppins.variable} antialiased`}>{children}</body>
+      <body className={`${poppins.variable} antialiased`}>
+        <ScrollToTop />
+        {children}
+      </body>
     </html>
   );
 }

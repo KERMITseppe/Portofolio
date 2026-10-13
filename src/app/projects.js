@@ -10,7 +10,7 @@ export const categories = [
     projects: [
       {
         title: "A$AP Rocky",
-        src: "/ASAP.png",
+        src: "/work/asap-rocky.webp",
         year: "2026",
         tools: "Photoshop · Illustrator",
         description:
@@ -18,7 +18,7 @@ export const categories = [
       },
       {
         title: "Tyler, The Creator",
-        src: "/Tyler_verticaal.png",
+        src: "/work/tyler-the-creator.webp",
         year: "2026",
         tools: "Photoshop · Illustrator",
         description:
@@ -26,7 +26,7 @@ export const categories = [
       },
       {
         title: "Jeff Buckley",
-        src: "/Jeff_Vertricaal.png",
+        src: "/work/jeff-buckley.webp",
         year: "2026",
         tools: "Photoshop · Illustrator",
         description:
@@ -42,7 +42,7 @@ export const categories = [
     projects: [
       {
         title: "Live Yourz",
-        src: "/POSTER SAVIO_page-0001.jpg",
+        src: "/work/live-yourz.webp",
         year: "2025",
         tools: "Photoshop · Illustrator",
         description:
@@ -50,7 +50,7 @@ export const categories = [
       },
       {
         title: "The Velvet Queen",
-        src: "/The_Velvet_Queen_03.jpg",
+        src: "/work/the-velvet-queen.webp",
         year: "2024",
         tools: "Photoshop · Illustrator",
         description:
@@ -58,7 +58,7 @@ export const categories = [
       },
       {
         title: "JEF Festival",
-        src: "/JEF FESTIVAL.jpg",
+        src: "/work/jef-festival.webp",
         year: "2024",
         tools: "Photoshop · Illustrator",
         description:
@@ -74,7 +74,7 @@ export const categories = [
     projects: [
       {
         title: "Twisted",
-        src: "/Poster twisted A3_page-0001.jpg",
+        src: "/work/twisted.webp",
         year: "2024",
         tools: "Photoshop",
         description:
@@ -82,7 +82,7 @@ export const categories = [
       },
       {
         title: "Tangram Code",
-        src: "/Poster Vormen.jpg",
+        src: "/work/tangram-code.webp",
         year: "2024",
         tools: "Photoshop",
         description:
@@ -90,7 +90,7 @@ export const categories = [
       },
       {
         title: "Bauhaus",
-        src: "/Bauhaus.jpg",
+        src: "/work/bauhaus.webp",
         year: "2024",
         tools: "Photoshop · Illustrator",
         description:

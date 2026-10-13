@@ -41,7 +41,9 @@ export default function ProjectGrid({ projects, ratio }) {
                   alt={project.title}
                   fill
                   sizes="(min-width: 1024px) 380px, (min-width: 640px) 45vw, 90vw"
-                  className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+                  draggable={false}
+                  onContextMenu={(e) => e.preventDefault()}
+                  className="pointer-events-none select-none object-cover transition-transform duration-500 group-hover:scale-[1.04]"
                 />
                 <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                   <span className="m-4 inline-flex items-center gap-2 rounded-full bg-[var(--accent)] px-4 py-1.5 text-sm font-semibold text-black">
@@ -54,6 +56,7 @@ export default function ProjectGrid({ projects, ratio }) {
                 <span className="text-sm text-white/50 tabular-nums">{project.year}</span>
               </div>
               <p className="text-sm text-white/50">{project.tools}</p>
+              <p className="mt-1 text-[11px] uppercase tracking-[0.15em] text-white/35">Not for commercial use</p>
             </button>
           </li>
         ))}
@@ -71,8 +74,21 @@ export default function ProjectGrid({ projects, ratio }) {
             className="relative grid max-h-[92vh] w-full max-w-5xl grid-cols-1 overflow-y-auto rounded-2xl border border-white/10 bg-[#141414] md:grid-cols-[1.1fr_1fr] md:overflow-hidden"
             onClick={(e) => e.stopPropagation()}
           >
-            <div className="relative h-[55vh] bg-black md:h-[85vh]">
-              <Image src={p.src} alt={p.title} fill sizes="(min-width: 768px) 55vw, 100vw" className="object-contain" />
+            <div
+              className="relative h-[55vh] select-none bg-black md:h-[85vh]"
+              onContextMenu={(e) => e.preventDefault()}
+            >
+              <Image
+                src={p.src}
+                alt={p.title}
+                fill
+                sizes="(min-width: 768px) 55vw, 100vw"
+                draggable={false}
+                className="pointer-events-none object-contain"
+              />
+              <span className="pointer-events-none absolute bottom-3 right-3 rounded bg-black/50 px-2 py-1 text-[10px] font-semibold uppercase tracking-[0.15em] text-white/70">
+                © Seppe Rennen
+              </span>
             </div>
             <div className="flex flex-col gap-4 p-6 md:p-8 md:overflow-y-auto">
               <span className="text-xs font-semibold uppercase tracking-[0.2em] text-[var(--accent)]">
@@ -80,6 +96,9 @@ export default function ProjectGrid({ projects, ratio }) {
               </span>
               <h3 className="text-3xl font-extrabold leading-tight text-white">{p.title}</h3>
               <p className="leading-relaxed text-white/75">{p.description}</p>
+              <p className="inline-flex w-fit items-center gap-2 rounded-full border border-white/15 px-3 py-1 text-xs font-semibold uppercase tracking-[0.15em] text-white/60">
+                <i className="fa-solid fa-ban text-[var(--accent)]" /> Not for commercial use
+              </p>
               <div className="mt-auto flex gap-2 pt-4">
                 <button
                   type="button"
