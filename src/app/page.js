@@ -1,178 +1,164 @@
 import Image from "next/image";
+import ProjectGrid from "./ProjectGrid";
+import { categories } from "./projects";
+
+const contact = [
+  { icon: "fa-solid fa-envelope", label: "rennen.seppe@gmail.com", href: "mailto:rennen.seppe@gmail.com" },
+  { icon: "fa-brands fa-instagram", label: "@notseppes", href: "https://www.instagram.com/notseppes" },
+  { icon: "fa-brands fa-youtube", label: "@rennenseppe", href: "https://www.youtube.com/@rennenseppe" },
+];
+
+function Card({ children, className = "", id }) {
+  return (
+    <section
+      id={id}
+      className={`scroll-mt-24 rounded-3xl border border-white/12 bg-white/[0.02] p-6 sm:p-10 ${className}`}
+    >
+      {children}
+    </section>
+  );
+}
 
 export default function Page() {
   return (
-    <div className="font-['Roboto',sans-serif] text-white bg-[#171717] min-h-screen p-4">
-      <header className="text-center my-3">
-        <Image 
-          src="/runningprod_logo.png" 
-          alt="Website Logo" 
-          width={200} 
-          height={200} 
-          className="rounded-3xl mx-auto mb-8 h-auto w-auto" 
-        />
-        <h1 className="font-bold text-2xl">Running Productions</h1>
-        <small className="text-gray-400 text-sm block mt-1">Seppe Rennen</small>
-        <ul className="p-0 list-none flex justify-center space-x-4 mt-4 text-xl">
-          <li>
-            <a href="mailto:rennen.seppe@gmail.com" aria-label="Email">
-              <i className="fa-solid fa-envelope text-3xl inline-block transition-transform duration-200 hover:scale-110"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.youtube.com/@rennenseppe" aria-label="YouTube" target="_blank" rel="noopener noreferrer">
-              <i className="fa-brands fa-youtube text-3xl inline-block transition-transform duration-200 hover:scale-110"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/notseppes" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-              <i className="fa-brands fa-instagram text-3xl inline-block transition-transform duration-200 hover:scale-110"></i>
-            </a>
-          </li>
-        </ul>
-      </header>
-
-      <main className="p-4">
-        <p className="text-center text-lg">
-          Hello there, I am Seppe, student at Thomas More Mechelen, Belgium. <br />
-          I&apos;m studying Media and Entertainment Business.
-        </p>
-
-        <div className="w-full mt-8 text-center">
-          <h2 className="text-2xl font-bold">Projects</h2>
-          <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mt-4 list-none p-0">
-            <li className="flex flex-col items-center gap-4">
-              <Image 
-                src="/The_Velvet_Queen_03.jpg" 
-                alt="The Velvet Queen" 
-                width={500} 
-                height={650} 
-                className="mx-auto max-w-full h-auto"
-              />
-              <p className="text-[rgb(83,83,255)] text-xl font-bold">The Velvet Queen</p>
-              <p>
-                This fictional poster is a tribute to The Velvet Queen, inspired by the original movie poster. The background features an image from the documentary, which reinforces the film&apos;s visual identity. The text remains faithful to the original, using the elegant Mencken Std. typeface that perfectly matches the film&apos;s aesthetic.
-              </p>
-              <p>Made with Adobe Photoshop and Adobe Illustrator – 2024</p>
-            </li>
-            <li className="flex flex-col items-center gap-4">
-              <Image 
-                src="/POSTER SAVIO_page-0001.jpg" 
-                alt="Live Yourz" 
-                width={500} 
-                height={650} 
-                className="mx-auto max-w-full h-auto" 
-              />
-              <p className="text-[rgb(83,83,255)] text-xl font-bold">Live Yourz</p>
-              <p>
-                A poster designed for the short film by Savio Golfa, inspired by the melancholic atmosphere of the film. The design visualizes the somber period of the main character through a recurring visual motif that runs as a common thread throughout the film. The visual identity reinforces the emotional narrative and emphasizes the dark themes explored in the film.
-              </p>
-              <p>Made with Adobe Photoshop and Adobe Illustrator – 2025</p>
-            </li>
-            <li className="flex flex-col items-center gap-4">
-              <Image 
-                src="/Poster twisted A3_page-0001.jpg" 
-                alt="Twisted" 
-                width={500} 
-                height={650} 
-                className="mx-auto max-w-full h-auto" 
-              />
-              <p className="text-[rgb(83,83,255)] text-xl font-bold">Twisted</p>
-              <p>
-                Blank Poster is a hypnotic typographic artwork that plays with repetition and optical illusions. The word &quot;TWISTED&quot; forms a spiral that appears to spin infinitely, with a strong contrast between black and white. This minimalist design draws the viewer toward a central point that feels like a visual black hole. The work explores themes such as distortion, structure, and the power of words in a graphic context.
-              </p>
-              <p>Made with Adobe Photoshop – 2024</p>
-            </li>
-            <li className="flex flex-col items-center gap-4">
-              <Image 
-                src="/Poster Vormen.jpg" 
-                alt="Poster Vormen" 
-                width={500} 
-                height={650} 
-                className="mx-auto max-w-full h-auto" 
-              />
-              <p className="text-[rgb(83,83,255)] text-xl font-bold">Tangram Code</p>
-              <p>
-               Tangram Code is a geometric artwork that arranges numbers like a modern tangram puzzle. The clean grid suggests hidden patterns through stark black-and-white contrast. This minimalist piece plays with logic, sequence, and the visual rhythm of data, inviting the viewer to find meaning in simplicity.
-              </p>
-              <p>Made with Adobe Photoshop – 2024</p>
-            </li>
-            <li className="flex flex-col items-center gap-4">
-              <Image 
-                src="/Bauhaus.jpg" 
-                alt="Bauhaus" 
-                width={500} 
-                height={650} 
-                className="mx-auto max-w-full h-auto" 
-              />
-              <p className="text-[rgb(83,83,255)] text-xl font-bold">Bauhause</p>
-              <p>
-                This fictional poster is designed in the minimalist Bauhaus style, with a clean composition and ample white space. Centered is a stylized little jug, along with the title Bauhaus. The bottom of the design contains the exhibition information and date.
-              </p>
-              <p>Made with Adobe Photoshop and Adobe Illustrator – 2024</p>
-            </li>
-            <li className="flex flex-col items-center gap-4">
-              <Image 
-                src="/JEF FESTIVAL.jpg" 
-                alt="JEF FESTIVAL" 
-                width={500} 
-                height={650} 
-                className="mx-auto max-w-full h-auto" 
-              />
-              <p className="text-[rgb(83,83,255)] text-xl font-bold">JEF Poster</p>
-              <p>
-                A personal initiative designed for the JEF Youth Film Festival, inspired by their previous posters and house style. The design combines five unique shapes, using the three official JEF brand colors to maintain the visual identity.
-              </p>
-              <p>Made with Adobe Photoshop and Adobe Illustrator – 2024</p>
-            </li>
-            <li className="flex flex-col items-center gap-4">
-              <Image 
-                src="/ASAP.png" 
-                alt="A$AP Rocky" 
-                width={500} 
-                height={650} 
-                className="mx-auto max-w-full h-auto" 
-              />
-              <p className="text-[rgb(83,83,255)] text-xl font-bold">A$AP Rocky Poster</p>
-              <p>
-                This tribute poster captures the raw fashion, attitude, and visual identity of A$AP Rocky. The design combines striking high-contrast black-and-white photography with bold, oversized yellow typography layered across the composition. By integrating his iconic quote on fashion and emotion, the artwork highlights the intersection between music, personal style, and graphic design.
-              </p>
-              <p>Made with Adobe Photoshop and Adobe Illustrator – 2026</p>
-            </li>
-            <li className="flex flex-col items-center gap-4">
-              <Image 
-                src="/Tyler_verticaal.png" 
-                alt="Tyler, The Creator" 
-                width={500} 
-                height={650} 
-                className="mx-auto max-w-full h-auto" 
-              />
-              <p className="text-[rgb(83,83,255)] text-xl font-bold">Tyler, The Creator Poster</p>
-              <p>
-                This tribute poster reflects the eccentric and creative world of Tyler, The Creator. The layout pairs a high-contrast black-and-white portrait with playfulness and distinctive vintage typography against a soft blue background. Featuring his impactful quote on individuality and world-building, the design captures his unique crossover between hip-hop, fashion, and alternative art.
-              </p>
-              <p>Made with Adobe Photoshop and Adobe Illustrator – 2026</p>
-            </li>
-            <li className="flex flex-col items-center gap-4">
-              <Image 
-                src="/Jeff_Vertricaal.png" 
-                alt="Jeff Buckley" 
-                width={500} 
-                height={650} 
-                className="mx-auto max-w-full h-auto" 
-              />
-              <p className="text-[rgb(83,83,255)] text-xl font-bold">Jeff Buckley Poster</p>
-              <p>
-                This tribute poster honors the emotional depth and raw artistic nature of Jeff Buckley. The design combines a black-and-white portrait with deep burgundy typography against a soft lavender backdrop. By incorporating his poetic quote on sensitivity and awareness, the artwork captures the vulnerable yet powerful essence of his music and legacy.
-              </p>
-              <p>Made with Adobe Photoshop and Adobe Illustrator – 2026</p>
+    <div className="min-h-screen bg-[var(--bg)] text-white">
+      {/* Navigatie */}
+      <nav className="sticky top-0 z-40 border-b border-white/10 bg-[var(--bg)]/85 backdrop-blur">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-4 py-3 sm:px-6">
+          <a href="#top" className="flex items-center gap-3">
+            <Image
+              src="/runningprod_logo.png"
+              alt="Running Productions logo"
+              width={36}
+              height={36}
+              className="invert mix-blend-screen"
+            />
+            <span className="hidden text-sm font-semibold tracking-wide sm:inline">Running Productions</span>
+          </a>
+          <ul className="flex items-center gap-5 text-sm text-white/70">
+            <li><a href="#work" className="hover:text-[var(--accent)]">Work</a></li>
+            <li><a href="#about" className="hover:text-[var(--accent)]">About</a></li>
+            <li>
+              <a
+                href="mailto:rennen.seppe@gmail.com"
+                className="rounded-full bg-[var(--accent)] px-4 py-2 font-semibold text-black hover:brightness-110"
+              >
+                Contact
+              </a>
             </li>
           </ul>
         </div>
+      </nav>
+
+      <main id="top" className="mx-auto max-w-6xl px-4 sm:px-6">
+        {/* Hero */}
+        <header className="flex min-h-[70vh] flex-col justify-center py-16">
+          <div className="mx-auto w-fit max-w-full">
+            <div className="flex justify-between text-xs font-bold uppercase tracking-[0.25em] sm:text-sm">
+              <span className="text-[var(--accent)]">Graphic Designer</span>
+              <span className="text-white/80">Seppe Rennen</span>
+            </div>
+            <h1 className="mt-2 text-[17vw] font-extrabold leading-[0.85] tracking-tight sm:text-[9.5rem] lg:text-[11rem]">
+              PORTFOLIO
+            </h1>
+            <div className="mt-3 flex items-center justify-end bg-[var(--accent)] px-4 py-1 sm:py-2">
+              <span className="text-2xl font-extrabold text-black sm:text-4xl">2026</span>
+            </div>
+            <p className="mt-8 max-w-md text-white/60">
+              Posters, typography and visual identities, made in Mechelen, Belgium.
+            </p>
+            <a href="#work" className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-white hover:text-[var(--accent)]">
+              See the work <i className="fa-solid fa-arrow-down" />
+            </a>
+          </div>
+        </header>
+
+        {/* Over mij */}
+        <Card id="about" className="grid gap-8 md:grid-cols-[240px_1fr] md:items-center">
+          <div className="mx-auto flex aspect-square w-full max-w-[200px] items-center justify-center rounded-2xl bg-white p-6 md:max-w-none">
+            <Image src="/runningprod_logo_full.png" alt="Running Productions" width={220} height={220} />
+          </div>
+          <div>
+            <h2 className="text-3xl font-extrabold text-[var(--accent)]">Hello!</h2>
+            <p className="mt-3 leading-relaxed text-white/80">
+              I&apos;m Seppe, a student at Thomas More Mechelen, Belgium, studying Media and
+              Entertainment Business. Under the name Running Productions I design posters and
+              typographic work, from film posters to tributes to the artists who inspire me.
+            </p>
+            <ul className="mt-5 space-y-2">
+              {contact.map((c) => (
+                <li key={c.label}>
+                  <a
+                    href={c.href}
+                    target={c.href.startsWith("http") ? "_blank" : undefined}
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-3 text-sm text-white/80 hover:text-[var(--accent)]"
+                  >
+                    <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-white/10">
+                      <i className={c.icon} />
+                    </span>
+                    {c.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </Card>
+
+        {/* Info-blokken */}
+        <div className="mt-6 grid gap-6 md:grid-cols-3">
+          <Card className="!p-6 sm:!p-8">
+            <h3 className="font-bold text-[var(--accent)]">Education</h3>
+            <p className="mt-3 text-sm text-white/80">Media and Entertainment Business</p>
+            <p className="text-sm text-white/50">Thomas More, Mechelen</p>
+          </Card>
+          <Card className="!p-6 sm:!p-8">
+            <h3 className="font-bold text-[var(--accent)]">Software</h3>
+            <ul className="mt-3 flex flex-wrap gap-2 text-sm">
+              {["Photoshop", "Illustrator"].map((s) => (
+                <li key={s} className="rounded-full border border-white/20 px-3 py-1 text-white/80">Adobe {s}</li>
+              ))}
+            </ul>
+          </Card>
+          <Card className="!p-6 sm:!p-8">
+            <h3 className="font-bold text-[var(--accent)]">What I make</h3>
+            <ul className="mt-3 space-y-1 text-sm text-white/80">
+              <li>Film &amp; event posters</li>
+              <li>Music tribute posters</li>
+              <li>Typography &amp; experimental work</li>
+            </ul>
+          </Card>
+        </div>
+
+        {/* Werk */}
+        <div id="work" className="scroll-mt-24 space-y-6 py-6">
+          {categories.map((cat) => (
+            <Card key={cat.id} id={cat.id}>
+              <div className="mb-8 flex flex-col gap-2 sm:flex-row sm:items-end sm:justify-between">
+                <h2 className="text-3xl font-extrabold text-[var(--accent)] sm:text-4xl">{cat.title}</h2>
+                <p className="max-w-sm text-sm text-white/55 sm:text-right">{cat.intro}</p>
+              </div>
+              <ProjectGrid projects={cat.projects} ratio={cat.ratio} />
+            </Card>
+          ))}
+        </div>
+
+        {/* Afsluiter */}
+        <Card className="mb-6 text-center">
+          <h2 className="text-3xl font-extrabold sm:text-5xl">
+            Let&apos;s make something <span className="text-[var(--accent)]">together.</span>
+          </h2>
+          <a
+            href="mailto:rennen.seppe@gmail.com"
+            className="mt-6 inline-flex items-center gap-2 rounded-full bg-[var(--accent)] px-6 py-3 font-semibold text-black hover:brightness-110"
+          >
+            <i className="fa-solid fa-envelope" /> rennen.seppe@gmail.com
+          </a>
+        </Card>
       </main>
 
-      <footer className="mt-8 text-center text-gray-400">
-        <small>Contact rennen.seppe@gmail.com | 2025 | Last update: 05/10/2026 | 2.0</small>
+      <footer className="border-t border-white/10 py-6 text-center text-xs text-white/40">
+        © 2026 Seppe Rennen · Running Productions · v3.0
       </footer>
     </div>
   );
