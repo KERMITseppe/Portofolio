@@ -75,6 +75,7 @@ export default function Page() {
 
         {/* Over mij */}
         <Card id="about" className="grid gap-8 md:grid-cols-[240px_1fr] md:items-center">
+          {/* Later een foto? Vervang dit blok door een <Image src="/seppe.jpg" ... /> */}
           <div className="mx-auto flex aspect-square w-full max-w-[200px] items-center justify-center rounded-2xl bg-white p-6 md:max-w-none">
             <Image src="/runningprod_logo_full.png" alt="Running Productions" width={220} height={220} />
           </div>
@@ -113,10 +114,10 @@ export default function Page() {
             <p className="text-sm text-white/50">Thomas More, Mechelen</p>
           </Card>
           <Card className="!p-6 sm:!p-8">
-            <h3 className="font-bold text-[var(--accent)]">Software</h3>
+            <h3 className="font-bold text-[var(--accent)]">Adobe Software</h3>
             <ul className="mt-3 flex flex-wrap gap-2 text-sm">
-              {["Photoshop", "Illustrator"].map((s) => (
-                <li key={s} className="rounded-full border border-white/20 px-3 py-1 text-white/80">Adobe {s}</li>
+              {["Photoshop", "Illustrator", "InDesign", "Premiere Pro", "After Effects"].map((s) => (
+                <li key={s} className="rounded-full border border-white/20 px-3 py-1 text-white/80">{s}</li>
               ))}
             </ul>
           </Card>
