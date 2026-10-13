@@ -74,7 +74,7 @@ export default function Portfolio() {
             <div className="mt-3 flex items-center justify-end bg-[var(--accent)] px-4 py-1 sm:py-2">
               <span className="text-2xl font-extrabold text-black sm:text-4xl">2026</span>
             </div>
-            <p className="mt-8 max-w-md text-white/60">
+            <p className="mt-8 max-w-2xl text-pretty text-white/60">
               {t.hero.tagline}
             </p>
             <a href="#work" className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-white hover:text-[var(--accent)]">
