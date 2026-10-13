@@ -62,7 +62,7 @@ export default function Portfolio() {
 
       <main id="top" className="mx-auto max-w-6xl px-4 sm:px-6">
         {/* Hero */}
-        <header className="flex min-h-[70vh] flex-col justify-center py-16">
+        <header className="flex flex-col justify-center pb-12 pt-16 sm:pb-16 sm:pt-24">
           <div className="mx-auto w-fit max-w-full">
             <div className="flex justify-between text-xs font-bold uppercase tracking-[0.25em] sm:text-sm">
               <span className="text-[var(--accent)]">{t.hero.role}</span>
