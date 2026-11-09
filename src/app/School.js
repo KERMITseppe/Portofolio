@@ -14,7 +14,8 @@ export default function School() {
   const s = t.school;
 
   return (
-    <div className="min-h-screen bg-[var(--bg)] text-white">
+    // Op deze pagina is de accentkleur Spotify-groen in plaats van geel.
+    <div className="min-h-screen bg-[var(--bg)] text-white" style={{ "--accent": SPOTIFY_GREEN }}>
       <nav className="sticky top-0 z-40 border-b border-white/10 bg-[var(--bg)]/85 backdrop-blur">
         <div className="mx-auto flex max-w-3xl items-center justify-between px-4 py-3 sm:px-6">
           <Link href="/" className="flex items-center gap-3 text-sm text-white/70 hover:text-[var(--accent)]">
