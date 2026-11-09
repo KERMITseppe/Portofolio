@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import ProjectGrid from "./ProjectGrid";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useLanguage } from "./LanguageContext";
@@ -46,6 +47,16 @@ export default function Portfolio() {
             <li className="hidden sm:block"><a href="#work" className="hover:text-[var(--accent)]">{t.nav.work}</a></li>
             <li className="hidden sm:block"><a href="#about" className="hover:text-[var(--accent)]">{t.nav.about}</a></li>
             <li>
+              <Link
+                href="/school"
+                aria-label={t.nav.school}
+                className="inline-flex items-center gap-1.5 rounded-full border border-white/20 px-3 py-2 font-semibold text-white hover:border-[var(--accent)] hover:text-[var(--accent)]"
+              >
+                <i className="fa-solid fa-graduation-cap" />
+                <span className="hidden sm:inline">{t.nav.school}</span>
+              </Link>
+            </li>
+            <li>
               <LanguageSwitcher />
             </li>
             <li>
@@ -77,9 +88,17 @@ export default function Portfolio() {
             <p className="mt-8 max-w-2xl text-pretty text-white/60">
               {t.hero.tagline}
             </p>
-            <a href="#work" className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-white hover:text-[var(--accent)]">
-              {t.hero.cta} <i className="fa-solid fa-arrow-down" />
-            </a>
+            <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-4">
+              <a href="#work" className="inline-flex items-center gap-2 text-sm font-semibold text-white hover:text-[var(--accent)]">
+                {t.hero.cta} <i className="fa-solid fa-arrow-down" />
+              </a>
+              <Link
+                href="/school"
+                className="inline-flex items-center gap-2 rounded-full border border-[var(--accent)] px-5 py-2.5 text-sm font-semibold text-[var(--accent)] hover:bg-[var(--accent)] hover:text-black"
+              >
+                <i className="fa-solid fa-graduation-cap" /> {t.nav.schoolCta}
+              </Link>
+            </div>
           </div>
         </header>
 
