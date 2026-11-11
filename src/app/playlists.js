@@ -11,33 +11,53 @@
 
 export const playlists = [
   {
-    id: "playlist-1",
+    id: "categorie-1",
     url: "",
-    title: { en: "Playlist 1", nl: "Playlist 1", fr: "Playlist 1" },
+    title: { en: "Category 1", nl: "Categorie 1", fr: "Catégorie 1" },
     description: {
-      en: "Description follows soon.",
-      nl: "Beschrijving volgt binnenkort.",
-      fr: "Description à venir.",
+      en: "90–110 BPM",
+      nl: "90–110 BPM",
+      fr: "90–110 BPM",
     },
   },
   {
-    id: "playlist-2",
+    id: "categorie-2",
     url: "",
-    title: { en: "Playlist 2", nl: "Playlist 2", fr: "Playlist 2" },
+    title: { en: "Category 2", nl: "Categorie 2", fr: "Catégorie 2" },
     description: {
-      en: "Description follows soon.",
-      nl: "Beschrijving volgt binnenkort.",
-      fr: "Description à venir.",
+      en: "111–130 BPM",
+      nl: "111–130 BPM",
+      fr: "111–130 BPM",
     },
   },
   {
-    id: "playlist-3",
+    id: "categorie-3",
     url: "",
-    title: { en: "Playlist 3", nl: "Playlist 3", fr: "Playlist 3" },
+    title: { en: "Category 3", nl: "Categorie 3", fr: "Catégorie 3" },
     description: {
-      en: "Description follows soon.",
-      nl: "Beschrijving volgt binnenkort.",
-      fr: "Description à venir.",
+      en: "131–150 BPM",
+      nl: "131–150 BPM",
+      fr: "131–150 BPM",
+    },
+  },
+  {
+    id: "categorie-4",
+    url: "",
+    title: { en: "Category 4", nl: "Categorie 4", fr: "Catégorie 4" },
+    description: {
+      en: "151–170 BPM",
+      nl: "151–170 BPM",
+      fr: "151–170 BPM",
+    },
+  },
+  {
+    id: "categorie-5",
+    url: "",
+    title: { en: "Category 5", nl: "Categorie 5", fr: "Catégorie 5" },
+    description: {
+      en: "171–190 BPM",
+      nl: "171–190 BPM",
+      fr: "171–190 BPM",
     },
   },
 ];
