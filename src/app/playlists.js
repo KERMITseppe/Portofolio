@@ -13,52 +13,32 @@ export const playlists = [
   {
     id: "categorie-1",
     url: "https://open.spotify.com/playlist/5dP1N2GQBmC92wVxzSesS4",
-    title: { en: "Category 1", nl: "Categorie 1", fr: "Catégorie 1" },
-    description: {
-      en: "90–110 BPM",
-      nl: "90–110 BPM",
-      fr: "90–110 BPM",
-    },
+    title: { en: "90–110 BPM", nl: "90–110 BPM", fr: "90–110 BPM" },
+    description: { en: "", nl: "", fr: "" },
   },
   {
     id: "categorie-2",
     url: "https://open.spotify.com/playlist/1mYcsTVRDqndToLxEb8NWp",
-    title: { en: "Category 2", nl: "Categorie 2", fr: "Catégorie 2" },
-    description: {
-      en: "111–130 BPM",
-      nl: "111–130 BPM",
-      fr: "111–130 BPM",
-    },
+    title: { en: "111–130 BPM", nl: "111–130 BPM", fr: "111–130 BPM" },
+    description: { en: "", nl: "", fr: "" },
   },
   {
     id: "categorie-3",
     url: "https://open.spotify.com/playlist/0YyFcrSuMrpHH58fcH0k9M",
-    title: { en: "Category 3", nl: "Categorie 3", fr: "Catégorie 3" },
-    description: {
-      en: "131–150 BPM",
-      nl: "131–150 BPM",
-      fr: "131–150 BPM",
-    },
+    title: { en: "131–150 BPM", nl: "131–150 BPM", fr: "131–150 BPM" },
+    description: { en: "", nl: "", fr: "" },
   },
   {
     id: "categorie-4",
     url: "https://open.spotify.com/playlist/6ORIPqhWOGWEl8bF0GIJbQ",
-    title: { en: "Category 4", nl: "Categorie 4", fr: "Catégorie 4" },
-    description: {
-      en: "151–170 BPM",
-      nl: "151–170 BPM",
-      fr: "151–170 BPM",
-    },
+    title: { en: "151–170 BPM", nl: "151–170 BPM", fr: "151–170 BPM" },
+    description: { en: "", nl: "", fr: "" },
   },
   {
     id: "categorie-5",
     url: "https://open.spotify.com/playlist/3dkPiro4g03i0uqwZnKeHI",
-    title: { en: "Category 5", nl: "Categorie 5", fr: "Catégorie 5" },
-    description: {
-      en: "171–190 BPM",
-      nl: "171–190 BPM",
-      fr: "171–190 BPM",
-    },
+    title: { en: "171–190 BPM", nl: "171–190 BPM", fr: "171–190 BPM" },
+    description: { en: "", nl: "", fr: "" },
   },
 ];
 
