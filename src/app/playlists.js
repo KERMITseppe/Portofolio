@@ -12,7 +12,7 @@
 export const playlists = [
   {
     id: "categorie-1",
-    url: "",
+    url: "https://open.spotify.com/playlist/5dP1N2GQBmC92wVxzSesS4",
     title: { en: "Category 1", nl: "Categorie 1", fr: "Catégorie 1" },
     description: {
       en: "90–110 BPM",
@@ -22,7 +22,7 @@ export const playlists = [
   },
   {
     id: "categorie-2",
-    url: "",
+    url: "https://open.spotify.com/playlist/1mYcsTVRDqndToLxEb8NWp",
     title: { en: "Category 2", nl: "Categorie 2", fr: "Catégorie 2" },
     description: {
       en: "111–130 BPM",
@@ -32,7 +32,7 @@ export const playlists = [
   },
   {
     id: "categorie-3",
-    url: "",
+    url: "https://open.spotify.com/playlist/0YyFcrSuMrpHH58fcH0k9M",
     title: { en: "Category 3", nl: "Categorie 3", fr: "Catégorie 3" },
     description: {
       en: "131–150 BPM",
@@ -42,7 +42,7 @@ export const playlists = [
   },
   {
     id: "categorie-4",
-    url: "",
+    url: "https://open.spotify.com/playlist/6ORIPqhWOGWEl8bF0GIJbQ",
     title: { en: "Category 4", nl: "Categorie 4", fr: "Catégorie 4" },
     description: {
       en: "151–170 BPM",
@@ -52,7 +52,7 @@ export const playlists = [
   },
   {
     id: "categorie-5",
-    url: "",
+    url: "https://open.spotify.com/playlist/3dkPiro4g03i0uqwZnKeHI",
     title: { en: "Category 5", nl: "Categorie 5", fr: "Catégorie 5" },
     description: {
       en: "171–190 BPM",
